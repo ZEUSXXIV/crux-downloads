@@ -6,6 +6,8 @@ This repository only hosts the **public installers** for Crux, the desktop app t
 
 What's in each version: [CHANGELOG.md](CHANGELOG.md).
 
+**See what Crux does:** [the Crux deck](https://zeusxxiv.github.io/crux-downloads/deck/), 19 slides on the problems it solves, how it works, and each feature, with real output. Use the arrow keys, or **Present** (P) for a presenter view with speaker notes.
+
 Crux works in its own window, and also:
 
 - **In SSMS 22:** right-click a table or column in Object Explorer to ask why it exists, or right-click a query to check what it would break before you run it. Setup offers to add it.
