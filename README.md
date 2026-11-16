@@ -6,7 +6,7 @@ This repository only hosts the **public installers** for Crux, the desktop app t
 
 What's in each version: [CHANGELOG.md](CHANGELOG.md).
 
-**See what Crux does:** [the Crux deck](https://zeusxxiv.github.io/crux-downloads/deck/), 19 slides on the problems it solves, how it works, and each feature, with real output. Use the arrow keys, or **Present** (P) for a presenter view with speaker notes. To keep a copy or present offline: [PowerPoint](../../raw/main/deck/Crux-deck.pptx) (speaker notes included) or [PDF](../../raw/main/deck/Crux-deck.pdf).
+**See what Crux does:** the Crux deck, 19 slides on the problems it solves, how it works, and each feature, with real output: [PowerPoint](../../raw/main/deck/Crux-deck.pptx) (with speaker notes) or [PDF](../../raw/main/deck/Crux-deck.pdf).
 
 Crux works in its own window, and also:
 
