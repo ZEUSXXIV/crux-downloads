@@ -30,10 +30,13 @@ param(
 
 $ErrorActionPreference = 'Stop'
 $scripts = Join-Path $PSScriptRoot 'bitwarden-server\util\Migrator\DbScripts'
+# sqlcmd is run with -C (trust the server's certificate): newer SQL Server tools encrypt by default and reject the
+# self-signed certificate LocalDB and a fresh SQL Server use, with "the certificate chain was issued by an authority
+# that is not trusted".
 if (-not (Get-Command sqlcmd -ErrorAction SilentlyContinue)) { throw 'sqlcmd was not found. Install the SQL Server command line tools.' }
 
 function Invoke-Sql([string]$Query, [string]$On = $Database) {
-    $output = & sqlcmd -S $Server -d $On -b -I -x -h -1 -W -Q "SET NOCOUNT ON; $Query" 2>&1
+    $output = & sqlcmd -C -S $Server -d $On -b -I -x -h -1 -W -Q "SET NOCOUNT ON; $Query" 2>&1
     if ($LASTEXITCODE -ne 0) { throw "sqlcmd failed: $output" }
     return $output
 }
@@ -71,7 +74,7 @@ foreach ($file in $files) {
         [System.IO.File]::WriteAllText($copy, $fixed, [System.Text.UTF8Encoding]::new($true))
         $script = $copy
     }
-    $output = & sqlcmd -S $Server -d $Database -b -I -x -i $script 2>&1
+    $output = & sqlcmd -C -S $Server -d $Database -b -I -x -i $script 2>&1
     if ($LASTEXITCODE -ne 0) {
         $failed += [pscustomobject]@{ Script = $file.Name; Error = (($output | Select-Object -Last 3) -join ' ').Trim() }
         continue
@@ -82,7 +85,7 @@ foreach ($file in $files) {
 Write-Progress -Activity "Applying bitwarden migrations" -Completed
 
 if ($Foreign) {
-    $output = & sqlcmd -S $Server -d $Database -b -I -x -i $Foreign 2>&1
+    $output = & sqlcmd -C -S $Server -d $Database -b -I -x -i $Foreign 2>&1
     if ($LASTEXITCODE -ne 0) { throw "$Foreign failed: $output" }
     $name = "Bit.Migrator.DbScripts.$([System.IO.Path]::GetFileName($Foreign))".Replace("'", "''")
     Invoke-Sql "INSERT INTO [dbo].[Migration] ([ScriptName], [Applied]) VALUES (N'$name', SYSUTCDATETIME());" | Out-Null
@@ -90,7 +93,7 @@ if ($Foreign) {
 
 if ($Drift) {
     foreach ($name in 'add-test-drift.sql', 'add-test-drift-code.sql') {
-        $output = & sqlcmd -S $Server -d $Database -b -I -x -i (Join-Path $PSScriptRoot $name) 2>&1
+        $output = & sqlcmd -C -S $Server -d $Database -b -I -x -i (Join-Path $PSScriptRoot $name) 2>&1
         if ($LASTEXITCODE -ne 0) { throw "$name failed: $output" }
     }
 }
