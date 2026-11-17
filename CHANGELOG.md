@@ -1,5 +1,12 @@
 # What's new in Crux
 
+## 0.2.1 — 17 November 2026
+
+A fix for Crux in SSMS 22; update if you added Crux to SSMS with 0.2.0. [Download](https://github.com/ZEUSXXIV/crux-downloads/releases/tag/v0.2.1)
+
+- **Works on every SSMS 22 update.** 0.2.0's SSMS extension was tied to the exact SSMS build it was made with, so on newer SSMS 22 releases its menu could not load. It now uses whatever SSMS is installed.
+- **Can no longer take SSMS down.** If something gets in Crux's way, that Crux feature switches off and the reason goes to `%LOCALAPPDATA%\Crux\ssms.log`, while SSMS carries on.
+
 ## 0.2.0 — 17 November 2026
 
 Crux comes to the tools you already work in. [Download](https://github.com/ZEUSXXIV/crux-downloads/releases/tag/v0.2.0)
