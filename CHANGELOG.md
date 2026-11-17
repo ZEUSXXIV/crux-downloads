@@ -1,5 +1,13 @@
 # What's new in Crux
 
+## 0.3.1 (preview) — 18 November 2026
+
+PostgreSQL support checked against real databases. A preview: 0.2.1 stays the main download. [Download](https://github.com/ZEUSXXIV/crux-downloads/releases/tag/v0.3.1)
+
+- **Matches real PostgreSQL databases.** Documenso's, Mattermost's and Conductor's migrations were run on PostgreSQL 17.7: every table, column, type, nullability, index and foreign key Crux works out now matches the database.
+- **Fixed on the way:** `IF NOT EXISTS` does nothing when the object is there; unnamed keys and indexes get PostgreSQL's own names; primary key columns are NOT NULL; `DEFAULT NULL` is no default.
+- **A tag for each database's kind**, **MSSQL** or **PG**, in the sidebar and at the top of a chat.
+
 ## 0.3.0 (preview) — 18 November 2026
 
 Crux reads PostgreSQL migrations. A preview: 0.2.1 stays the main download. [Download](https://github.com/ZEUSXXIV/crux-downloads/releases/tag/v0.3.0)
