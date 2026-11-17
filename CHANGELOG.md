@@ -1,5 +1,14 @@
 # What's new in Crux
 
+## 0.3.0 (preview) — 18 November 2026
+
+Crux reads PostgreSQL migrations. A preview: 0.2.1 stays the main download. [Download](https://github.com/ZEUSXXIV/crux-downloads/releases/tag/v0.3.0)
+
+- **PostgreSQL migrations, read with PostgreSQL's own parser.** Why and when, `/impact` (including PL/pgSQL functions and triggers), pull request and script checks, the reports and MCP all work as for SQL Server. Checked against more than 1,000 real migrations without a parse error.
+- **Flyway, Prisma and golang-migrate layouts**, plus `COMMENT ON` descriptions, `DO` blocks and `SET search_path`.
+- **Crux works out whether a repository is SQL Server or PostgreSQL**, says which on the database's page, and lets you change it.
+- Not yet: connecting to a running PostgreSQL database (`/drift`, `/usage`, sizes).
+
 ## 0.2.1 — 17 November 2026
 
 A fix for Crux in SSMS 22; update if you added Crux to SSMS with 0.2.0. [Download](https://github.com/ZEUSXXIV/crux-downloads/releases/tag/v0.2.1)
