@@ -1,6 +1,6 @@
 # Crux — downloads
 
-This repository only hosts the **public installers** for Crux, the desktop app that explains why and when each table and column in your SQL Server database (or PostgreSQL, in the [0.3.1 preview](https://github.com/ZEUSXXIV/crux-downloads/releases/tag/v0.3.1)) came to be, citing the migrations, commits and pull requests behind every answer.
+This repository only hosts the **public installers** for Crux, the desktop app that explains why and when each table and column in your SQL Server database (or PostgreSQL, in the [0.4.0 preview](https://github.com/ZEUSXXIV/crux-downloads/releases/tag/v0.4.0)) came to be, citing the migrations, commits and pull requests behind every answer.
 
 **Download:** [`CruxSetup.exe`](../../releases/latest/download/CruxSetup.exe) for Windows (x64). This link always fetches the newest full release. Older versions, previews and any Arm64 builds are on the [releases page](../../releases).
 
@@ -8,7 +8,7 @@ What's in each version: [CHANGELOG.md](CHANGELOG.md).
 
 **See what Crux does:** [the Crux deck online](https://zeusxxiv.github.io/crux-downloads/deck/), 19 slides on the problems it solves, how it works, and each feature, with real output. Use the arrow keys, or **Present** (P) for a presenter view with speaker notes. To keep a copy or present offline: [PowerPoint](../../raw/main/deck/Crux-deck.pptx) (with speaker notes) or [PDF](../../raw/main/deck/Crux-deck.pdf).
 
-**Try it with a real database:** [demo-database](demo-database) builds Bitwarden's schema from its ~550 migration scripts on SQL Server LocalDB, ready for Crux to connect to.
+**Try it with a real database:** [demo-database](demo-database) builds Bitwarden's schema from its ~550 migration scripts on SQL Server LocalDB, or Documenso's from its 169 migrations on PostgreSQL, ready for Crux to connect to.
 
 Crux works in its own window, and also:
 

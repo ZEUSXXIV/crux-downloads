@@ -1,5 +1,16 @@
 # What's new in Crux
 
+## 0.4.0 (preview) — 18 November 2026
+
+Crux connects to a running PostgreSQL database. A preview: 0.2.1 stays the main download. [Download](https://github.com/ZEUSXXIV/crux-downloads/releases/tag/v0.4.0)
+
+- **Connect a PostgreSQL database** with host, port, user, password and SSL mode, or a `postgresql://` address. Read only, and any user that can connect is enough.
+- **`/drift`** compares it with its migrations, allowing for how PostgreSQL rewrites types, defaults, index expressions and views. Documenso, Mattermost and Conductor, built from their migrations, show no differences.
+- **`/deployed`** from Flyway's, Prisma's or golang-migrate's history table, and **`/usage`** from PostgreSQL's statistics and `pg_stat_statements`, with the quietest hours once Crux has a week of hourly readings.
+- **Lock and rewrite warnings for PostgreSQL** in `/pr` and Check this script, sized against your tables: `CONCURRENTLY`, type changes, defaults, `SET NOT NULL`, `NOT VALID`, `lock_timeout`.
+- **A Documenso demo database** for PostgreSQL in [demo-database](demo-database).
+- `crux report /drift` (or any report) prints one report from the command line, without a model.
+
 ## 0.3.1 (preview) — 18 November 2026
 
 PostgreSQL support checked against real databases. A preview: 0.2.1 stays the main download. [Download](https://github.com/ZEUSXXIV/crux-downloads/releases/tag/v0.3.1)
