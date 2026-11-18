@@ -1,5 +1,17 @@
 # What's new in Crux
 
+## 0.4.1 (preview) — 18 November 2026
+
+The chat writes and checks SQL, takes attached files, and handles long conversations. A preview: 0.2.1 stays the main download. [Download](https://github.com/ZEUSXXIV/crux-downloads/releases/tag/v0.4.1)
+
+- **Scripts the model writes are checked.** Each query or migration is shown under the answer to copy; a migration is named your repository's way, with **Save as a migration…**, and Crux checks it as written. Nothing is run.
+- **On PostgreSQL, a missing pair of double quotes is an error:** `Recipient` for a table created as `"Recipient"` would fail.
+- **Attach text files** (scripts, logs, errors, query plans) with the paperclip, by dropping or by pasting. Attached scripts are checked before the model answers.
+- **Context** in the side panel shows how much of the model's context a chat uses, with a limit per model. Long chats leave out old lookups past 80%, and Claude's requests are cached.
+- **Compact**, or `/compact`, summarises the chat so far and carries on from the summary.
+- **`/deployed` on PostgreSQL** lists scripts not run yet, and failed and rolled-back runs.
+- A tidier side panel.
+
 ## 0.4.0 (preview) — 18 November 2026
 
 Crux connects to a running PostgreSQL database. A preview: 0.2.1 stays the main download. [Download](https://github.com/ZEUSXXIV/crux-downloads/releases/tag/v0.4.0)

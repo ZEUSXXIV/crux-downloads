@@ -1,6 +1,6 @@
 # Crux — downloads
 
-This repository only hosts the **public installers** for Crux, the desktop app that explains why and when each table and column in your SQL Server database (or PostgreSQL, in the [0.4.0 preview](https://github.com/ZEUSXXIV/crux-downloads/releases/tag/v0.4.0)) came to be, citing the migrations, commits and pull requests behind every answer.
+This repository only hosts the **public installers** for Crux, the desktop app that explains why and when each table and column in your SQL Server database (or PostgreSQL, in the [0.4.1 preview](https://github.com/ZEUSXXIV/crux-downloads/releases/tag/v0.4.1)) came to be, citing the migrations, commits and pull requests behind every answer.
 
 **Download:** [`CruxSetup.exe`](../../releases/latest/download/CruxSetup.exe) for Windows (x64). This link always fetches the newest full release. Older versions, previews and any Arm64 builds are on the [releases page](../../releases).
 
