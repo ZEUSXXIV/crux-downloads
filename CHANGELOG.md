@@ -1,5 +1,14 @@
 # What's new in Crux
 
+## 0.4.3 (preview) — 19 November 2026
+
+Crux on SSMS's status bar, and why a query failed. A preview: 0.2.1 stays the main download. [Download](https://github.com/ZEUSXXIV/crux-downloads/releases/tag/v0.4.3)
+
+- **Crux on the status bar** follows what you select in a query (`Crux · Organization · 2017 · used by 45`); a click opens the quick look.
+- **⚠ Crux: why?** When a query fails on a missing table or column, Crux says what happened to it: renamed (to what, in which script), dropped, in a migration not run here, or never there, with the nearest names. **Copy fixed query** and **Ask Crux to fix it**.
+- **Queries the chat writes are checked** against the migrations: a table or column they don't have is flagged under the answer.
+- A query window's own connection and database are used, including one picked from SSMS's drop-down.
+
 ## 0.4.2 (preview) — 19 November 2026
 
 Crux in SSMS without opening the panel. A preview: 0.2.1 stays the main download. [Download](https://github.com/ZEUSXXIV/crux-downloads/releases/tag/v0.4.2)
