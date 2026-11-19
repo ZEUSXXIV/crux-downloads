@@ -1,5 +1,15 @@
 # What's new in Crux
 
+## 0.4.2 (preview) — 19 November 2026
+
+Crux in SSMS without opening the panel. A preview: 0.2.1 stays the main download. [Download](https://github.com/ZEUSXXIV/crux-downloads/releases/tag/v0.4.2)
+
+- **Includes Crux's SSMS extension again.** The previews since 0.3.0 were built without it; install this one if you added Crux to SSMS.
+- **Quick look:** Crux → Quick look in Object Explorer, or Ctrl+K, Ctrl+Q on a name in a query, opens a small card in SSMS's colours: type, when it was made and changed with its pull request, size, and what uses it.
+- **History on hover** over names in a query, with table aliases and bare column names understood. Turn it off from the query editor's menu.
+- **Use SSMS's connection:** with Windows sign-in, one click connects Crux to the database, read only, for sizes, `/usage` and `/drift`.
+- **Fixed:** in a repository that moved or copied its migrations folder, scripts said they were written by the move. Crux now finds the commit that really wrote them.
+
 ## 0.4.1 (preview) — 18 November 2026
 
 The chat writes and checks SQL, takes attached files, and handles long conversations. A preview: 0.2.1 stays the main download. [Download](https://github.com/ZEUSXXIV/crux-downloads/releases/tag/v0.4.1)
