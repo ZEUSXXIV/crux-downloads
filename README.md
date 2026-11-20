@@ -6,7 +6,7 @@ This repository only hosts the **public installers** for Crux, the desktop app t
 
 What's in each version: [CHANGELOG.md](CHANGELOG.md).
 
-**See what Crux does:** [the Crux deck online](https://zeusxxiv.github.io/crux-downloads/deck/), 19 slides on the problems it solves, how it works, and each feature, with real output. Use the arrow keys, or **Present** (P) for a presenter view with speaker notes. To keep a copy or present offline: [PowerPoint](../../raw/main/deck/Crux-deck.pptx) (with speaker notes) or [PDF](../../raw/main/deck/Crux-deck.pdf).
+**See what Crux does:** [the Crux deck online](https://zeusxxiv.github.io/crux-downloads/deck/), 17 slides on the problems it solves, what Crux does and where, the sandbox, checked fixes, Plan mode and query plans at production size, and how it is built. Use the arrow keys, or **Present** (P) for a presenter view with speaker notes. The [previous deck](https://zeusxxiv.github.io/crux-downloads/deck-2026-11-18/) from 18 November is kept, with its [PowerPoint](../../raw/main/deck-2026-11-18/Crux-deck.pptx) and [PDF](../../raw/main/deck-2026-11-18/Crux-deck.pdf).
 
 **Try it with a real database:** [demo-database](demo-database) builds Bitwarden's schema from its ~550 migration scripts on SQL Server LocalDB, or Documenso's from its 169 migrations on PostgreSQL, ready for Crux to connect to.
 
