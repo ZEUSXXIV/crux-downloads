@@ -1,5 +1,13 @@
 # What's new in Crux
 
+## 0.5.0 — 20 November 2026
+
+The first full release since 0.2.1, with everything from the 0.3 and 0.4 previews. [Download](https://github.com/ZEUSXXIV/crux-downloads/releases/tag/v0.5.0)
+
+- **A sandbox that runs your scripts for real.** Crux builds a database of its own from your migrations (on LocalDB or a SQL Server you choose), runs each script you check in it and rolls it back. It reports SQL Server's errors, every view and procedure that no longer compiles, and the schema before and after. It is fenced: only Crux's own marked database, a user with no login, scripts that reach outside refused, every run rolled back.
+- **Crux updates itself.** An **Update** button in the title bar installs a newer Crux and reopens it. This is the last version you install by hand.
+- **From the previews:** PostgreSQL; quick look, history on hover, the status bar and "why did my query fail" in SSMS 22; checked queries and migrations in the chat; attached files; context and Compact.
+
 ## 0.4.3 (preview) — 19 November 2026
 
 Crux on SSMS's status bar, and why a query failed. A preview: 0.2.1 stays the main download. [Download](https://github.com/ZEUSXXIV/crux-downloads/releases/tag/v0.4.3)
