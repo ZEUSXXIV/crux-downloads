@@ -1,5 +1,13 @@
 # What's new in Crux
 
+## 0.5.2 — 20 November 2026
+
+Private repositories, without the GitHub CLI: sign in to GitHub from Crux. If you have 0.5.0 or 0.5.1, the **Update** button in Crux's title bar installs this one. [Download](https://github.com/ZEUSXXIV/crux-downloads/releases/tag/v0.5.2)
+
+- **Sign in to GitHub.** Models and keys → **Sign in to GitHub…** shows a code to enter at github.com/login/device. Crux signs in through its own GitHub App, so it reads only the repositories you choose (**Choose repositories…**), and only reads: code, pull requests and linked issues. A fine-grained token can be pasted instead.
+- The login is saved encrypted for your Windows user and used to clone and update private repositories and read their pull requests, in the app and through MCP.
+- When GitHub hides a repository, Crux says it needs a sign-in, or that it isn't one you chose, instead of leaving pull requests out.
+
 ## 0.5.1 — 20 November 2026
 
 The chat checks its own SQL, plans before it writes, and shows query plans at production size. If you have 0.5.0, the **Update** button in Crux's title bar installs this one. [Download](https://github.com/ZEUSXXIV/crux-downloads/releases/tag/v0.5.1)
