@@ -1,5 +1,14 @@
 # What's new in Crux
 
+## 0.5.3 — 20 November 2026
+
+Check every pull request's migrations by running them: Crux now has a GitHub Action. If you have 0.5.0 or later, the **Update** button in Crux's title bar installs this one. [Download](https://github.com/ZEUSXXIV/crux-downloads/releases/tag/v0.5.3)
+
+- **[ZEUSXXIV/crux-action](https://github.com/ZEUSXXIV/crux-action).** On each pull request it starts a throwaway SQL Server on the runner, builds a database from the migrations on the branch being merged into, runs the pull request's new scripts and rolls them back. It comments with SQL Server's errors and the views, procedures, functions and triggers the change breaks, marks them on the diff's lines, and fails the check. Everything stays on the runner.
+- **`crux check --sandbox`** does the same against any SQL Server that lets you create databases; `--summary`, `--label` and GitHub annotations for CI.
+- Each release now includes **crux-linux-x64.tar.gz**, Crux's command line for Linux.
+- **Fixed:** an error inside a view a script refreshes was placed on the wrong line.
+
 ## 0.5.2 — 20 November 2026
 
 Private repositories, without the GitHub CLI: sign in to GitHub from Crux. If you have 0.5.0 or 0.5.1, the **Update** button in Crux's title bar installs this one. [Download](https://github.com/ZEUSXXIV/crux-downloads/releases/tag/v0.5.2)
