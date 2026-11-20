@@ -1,5 +1,12 @@
 # What's new in Crux
 
+## 0.5.4 — 21 November 2026
+
+Your GitHub account gets its own place in Crux. If you have 0.5.0 or later, the **Update** button in Crux's title bar installs this one. [Download](https://github.com/ZEUSXXIV/crux-downloads/releases/tag/v0.5.4)
+
+- **Your GitHub account at the bottom of the sidebar**, with your picture and name. Click it to choose the repositories Crux may read, open your profile, or sign out. Signed out, it is a **Sign in to GitHub** button: a code to enter at github.com, no token needed. **Models and keys** now holds only models and the NVIDIA key.
+- **Fixed:** switching between Ask and Plan while a suggestion showed in the question box drew the placeholder over it.
+
 ## 0.5.3 — 20 November 2026
 
 Check every pull request's migrations by running them: Crux now has a GitHub Action. If you have 0.5.0 or later, the **Update** button in Crux's title bar installs this one. [Download](https://github.com/ZEUSXXIV/crux-downloads/releases/tag/v0.5.3)
