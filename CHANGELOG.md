@@ -1,5 +1,13 @@
 # What's new in Crux
 
+## 0.5.1 — 20 November 2026
+
+The chat checks its own SQL, plans before it writes, and shows query plans at production size. If you have 0.5.0, the **Update** button in Crux's title bar installs this one. [Download](https://github.com/ZEUSXXIV/crux-downloads/releases/tag/v0.5.1)
+
+- **Checked fixes.** SQL the chat writes is checked before you see it: names your migrations don't have, errors SQL Server gives in the sandbox, and code a migration breaks go back to the model with the real columns. The answer shows the corrected script, marked "Corrected before it was shown".
+- **Plan mode.** An **Ask | Plan** switch by the chat box. Describe a schema change and get a plan first: the steps, what each touches, risks and how to back out. **Generate migrations** writes one migration per step, checked and run together in order in the sandbox; **Save all as migrations** writes them with your repository's naming.
+- **Plans at production size.** With a database connected, the sandbox's tables are given the real row counts inside the rolled-back run, and SQL Server's estimated plans show what a query would read, flag big scans, and say whether a new index is used.
+
 ## 0.5.0 — 20 November 2026
 
 The first full release since 0.2.1, with everything from the 0.3 and 0.4 previews. [Download](https://github.com/ZEUSXXIV/crux-downloads/releases/tag/v0.5.0)
