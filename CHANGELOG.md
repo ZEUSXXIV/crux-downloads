@@ -1,5 +1,15 @@
 # What's new in Crux
 
+## 0.5.5 — 21 November 2026
+
+Every setting in one place. If you have 0.5.0 or later, the **Update** button in Crux's title bar installs this one. [Download](https://github.com/ZEUSXXIV/crux-downloads/releases/tag/v0.5.5)
+
+- **Settings**, from the gear at the bottom of the sidebar or **Ctrl+,**: General (theme, suggestions, send key, start mode), Models, GitHub, Databases, AI tools, Privacy and data, Updates and About. Changes apply at once.
+- **Light or dark by choice**, not only by Windows' setting.
+- **Claude without environment variables:** add a Claude API key in Settings, Models. It is checked with a request that costs nothing and kept encrypted. `ANTHROPIC_API_KEY` still comes first when set.
+- **Ollama on another machine:** set its address in Settings, with a Test button that lists its models.
+- **Privacy and data** shows what leaves your machine, and can clear all chats or remove the saved keys and sign-ins.
+
 ## 0.5.4 — 21 November 2026
 
 Your GitHub account gets its own place in Crux. If you have 0.5.0 or later, the **Update** button in Crux's title bar installs this one. [Download](https://github.com/ZEUSXXIV/crux-downloads/releases/tag/v0.5.4)
